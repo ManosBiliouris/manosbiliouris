@@ -1,0 +1,42 @@
+Core Color Palette
+Background (Dark Mode):
+
+Deep Charcoal/Black (#121212 or #0D0D0D): This will be the consistent, dark background across the site, providing the foundation for all the design elements. It's easy on the eyes and enhances the glowing, bioluminescent effects.
+Mountain Section (Digital, Geometric Vibe):
+
+Cool Blue (#0077FF or #1C8FE8): For the mountain lines and geometric shapes, this cool, icy blue will give that techy, digital feel. It’s vibrant enough to pop against the dark background without being overwhelming.
+Lighter Blue Accent (#66CCFF): Use this for hover effects or any active states to make certain mountain lines or interactive elements glow or highlight when interacted with.
+Transition/Blend Between Mountain and Sea:
+
+Gradient from Blue to Purple: The transition between the mountain and sea can be visually marked with a gradient that smoothly blends the cool blue into the vibrant purple. This keeps the flow of the site seamless.
+Gradient example: #1C8FE8 (blue) → #8A2BE2 (purple). Use this as a subtle background gradient between sections or to mark transitions in the content (e.g., on scroll).
+Sea Section (Bioluminescent, Flowing Vibe):
+
+Vibrant Purple (#8A2BE2 or #4B0082): For the sea section, use this deep, glowing purple to create the bioluminescent effect. It contrasts beautifully with the dark background and transitions nicely from the blue mountain above.
+Soft Glow Effect (#B366FF): This lighter purple will be used for the bioluminescent dots and highlights, adding a glowing, mystical effect. The glow will be subtle, not overpowering, but enough to create that otherworldly feel.
+Typography Colors:
+
+Text (Body): Use Light Gray (#E0E0E0) for all regular text to keep it readable without clashing with the design. It’s softer than pure white, so it doesn’t feel harsh against the dark mode background.
+Headlines/Key Words: For emphasis, you could use a glowing blue (#66CCFF) or soft purple (#B366FF) in headings or important phrases. This will match the color of the section it's in, e.g., blue in the mountain section, purple in the sea section.
+Subtle Neon Glow for Titles: You can add a slight neon glow (very minimal) to make key headings or call-to-actions stand out.
+Summary of Colors:
+#121212 (Dark background)
+#0077FF (Cool blue for mountain lines and interactive elements)
+#66CCFF (Lighter blue for accents and hover effects)
+#8A2BE2 (Vibrant purple for the bioluminescent sea)
+#B366FF (Lighter purple for glowing highlights)
+#E0E0E0 (Light gray for text)
+Where to Apply Colors:
+Background: #121212 throughout the whole site.
+Mountain Section:
+Mountain Lines and Shapes: #0077FF (Cool Blue).
+Interactive Elements (hover): #66CCFF (Lighter Blue).
+Sea Section:
+Waves and Fluid Shapes: #8A2BE2 (Vibrant Purple).
+Bioluminescent Dots/Particles: #B366FF (Soft Purple Glow).
+Typography:
+Regular text: #E0E0E0 (Light Gray).
+Headlines: Either #66CCFF (blue) in the mountain section or #B366FF (purple) in the sea section.
+Additional Touches:
+Use hover animations to change line colors in the mountain section (blue to a brighter blue) and subtle pulsing glows for the bioluminescent sea (purple dots gently pulsing).
+For scroll-triggered effects, apply gradients and transitions that shift from blue to purple to mirror the mountain-to-sea journey.
