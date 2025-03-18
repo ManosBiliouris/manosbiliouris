@@ -20,13 +20,12 @@ import { HandshakeSVG } from '../assets/HandshakeSVG.jsx';
 import { TelegramSVG } from '../assets/TelegramSVG.jsx';
 import { ShrugSVG } from '../assets/ShrugSVG.jsx';
 import { PlugSVG } from '../assets/PlugSVG.jsx';
-import { TaxiSVG } from '../assets/TaxiSVG.jsx';
+import { HospitalSVG } from '../assets/HospitalSVG.jsx';
 import { AceSVG } from '../assets/AceSVG.jsx';
 import { TeaSVG } from '../assets/TeaSVG.jsx';
 import { AgeSVG } from '../assets/AgeSVG.jsx';
 import { CompassSVG } from '../assets/CompassSVG.jsx';
 import { CoffeeBeanSVG } from '../assets/CoffeeBeanSVG.jsx';
-import { KotlinSVG } from '../assets/KotlinSVG.jsx';
 import EmailAccordion from '../components/EmailAccordion.jsx';
 
 const Portfolio = () => {
@@ -172,10 +171,6 @@ const Portfolio = () => {
                   <JavascriptSVG />
                   JavaScript
                 </a>
-                <a className='B1-7'> 
-                  <KotlinSVG />
-                  Kotlin
-                </a>
                 <a className='B1-8'> 
                   <PythonSVG />
                   Python
@@ -246,7 +241,7 @@ const Portfolio = () => {
             </span>
             <h1>
               Made with 💜 by me <br />
-              © 2024 All rights reserved
+              © 2025 All rights reserved
             </h1>
           </div>
         </div>
@@ -278,9 +273,9 @@ const Portfolio = () => {
               <div className="project-wrapper">
                 <p>#3</p>
                 <div className="project">
-                  <TaxiSVG />
+                  <HospitalSVG />
                     <h1>
-                      Taxi Schedule App
+                      Doctor’s Website
                     </h1>
                 </div>
               </div>
@@ -327,7 +322,7 @@ const Portfolio = () => {
                     </p>
                   </span>
                 </div>
-                <div className="the-tea tea2">
+                {/* <div className="the-tea tea2">
                   <div className="the-tea-title-wrapper">
                     <h1>My Balkan Mom</h1>
                     <span className='subtitle-C3'><p>Big supporter</p></span>
@@ -362,7 +357,7 @@ const Portfolio = () => {
                       Dolorem sed a aliquam necessitatibus labore atque cum saepe facilis.
                     </p>
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
