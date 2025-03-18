@@ -317,8 +317,7 @@ const Portfolio = () => {
                     <span className='the-tea-stars'>⭐⭐⭐⭐⭐ 5/5</span>
                   </div>
                   <span className='paragraph-C3'>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                      Dolorem sed a aliquam necessitatibus labore atque cum saepe facilis.
+                    <p>I’ve seen his work, I don’t understand much but everytime he creates something it looks absolutely beautiful.
                     </p>
                   </span>
                 </div>
