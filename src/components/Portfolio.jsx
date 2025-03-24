@@ -131,9 +131,10 @@ const Portfolio = () => {
                   <span className="italic-text"> to drown my sorrows in when my code decides to break for no reason</span>.
                 </p>
                 <p> 
-                  While juggling my studies, I also used to work at AGIPowerHub, where I was responsible for making their website.
-                  They built EV chargers; 
-                  <span className='italic-text'> I built their digital presence</span>.
+                  While juggling my studies, I also work for the Director of the ENT Clinic at the University Hospital of Ioannina 
+                  and Professor at the Univesity of Ioannina, 
+                  where I am responsible for making his website.  
+                  <span className='italic-text'> He treats patients and runs the place; I treat bugs and run his digital place</span>.
                 </p>
             </div>
           </div>
@@ -210,7 +211,7 @@ const Portfolio = () => {
             <div className="box sub-box">
               <div className="content-B2-3">
                   <div className="B2-3-title">
-                    <h1>3</h1>
+                    <h1>2</h1>
                     <div className='plus-symbol'></div>
                   </div>
                   <div className="sub-content-B2-3">
@@ -226,7 +227,7 @@ const Portfolio = () => {
               <HandshakeSVG />
               <h2>Drop me a line, and let’s turn your ideas into digital reality.</h2>
               <div className="content-B3-buttons">
-                <a href="https://t.me/manosbiliouris" target="_blank" rel="noopener noreferrer" className='B3-2'>
+              <a href="https://t.me/manosbiliouris" target="_blank" rel="noopener noreferrer" className='B3-2'>
                   <TelegramSVG />
                   Telegram
                 </a>
