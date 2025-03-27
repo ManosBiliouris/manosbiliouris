@@ -1,5 +1,11 @@
 @use '../src/styles/variables.scss' as *;
 
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .main {
   max-width: 100%;
   width: 100%;
@@ -17,6 +23,134 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // Laptop L (1440px)
+  @media (max-width: 1439px) {
+    .column {
+      flex: 1 1 45%;
+    }
+  }
+
+  // Laptop (1024px)
+  @media (max-width: 1023px) {
+    flex-direction: column; // Stack columns vertically
+    .column-1 {
+      flex-basis: 100%; // full width
+    }
+    .column.column-2, .column.column-3{
+      flex-basis: 100%; //full width
+    }
+  }
+
+  // Tablet (768px)
+  @media (max-width: 767px) {
+    flex-direction: column; // Ensure vertical stacking
+    .column {
+      flex-basis: 100%; // Full width for all columns
+    }
+
+    .box {
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  // Mobile L (425px)
+  @media (max-width: 424px) {
+    .box {
+      padding: 0.75rem;
+      
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+    .content-A1-buttons{
+      flex-wrap: wrap;
+    }
+    .content-A1-buttons {
+      
+      a{
+      flex-basis: calc(50% - 0.5rem);
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      }
+      a.A1-3 {
+        flex-basis: 100%;
+      }
+    }
+    .content-B3-buttons a {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .B1-knowledge{
+      min-width: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .box-container{
+      min-width: 100%;
+      width: 100%;
+    }
+    .box-container.B2{
+      display: grid;
+      grid-template-columns: 1fr;
+      
+    }
+  }
+
+  // Mobile M (375px)
+  @media (max-width: 374px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    .box {
+      padding: 0.65rem;
+    }
+  }
+
+  // Mobile S (320px)
+  @media (max-width: 319px) {
+    h1 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+
+    .box {
+      padding: 0.5rem;
+    }
+
+    .content-A1-buttons a,
+    .content-B3-buttons a {
+      font-size: 0.75rem;
+      padding: 0.4rem 0.6rem;
+    }
+  }
 }
 
  // Columns 
@@ -35,10 +169,9 @@
   flex: 1 1 30%;
 }
 
-.column.column.column-3 {
+.column.column-3 {
   flex: 1 1 30%;
 }
-
 
 //  Boxes 
 .box {
@@ -517,5 +650,3 @@
     font-size: 0.8rem;
   }
 }
-
-// Media Queries for responsiveness
