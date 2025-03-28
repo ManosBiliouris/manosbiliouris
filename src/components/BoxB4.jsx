@@ -1,4 +1,6 @@
 // components/BoxB4.jsx
+// It's the "footer"
+
 const BoxB4 = () => (
     <div className="box B4 box-B4">
       <span className='italic-text'>

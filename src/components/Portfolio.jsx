@@ -1,18 +1,9 @@
 import '../styles/Portfolio.scss';
-import { Brain } from "../assets/Brain.jsx";
 import { GitHub } from '../assets/GitHub.jsx';
 import { LinkedIn } from '../assets/LinkedIn.jsx';
 import { Instagram } from '../assets/Instagram.jsx';
 import { ServicesSVG } from '../assets/ServicesSVG.jsx';
 import { WhatElse } from '../assets/WhatElse.jsx';
-import { HtmlSVG } from '../assets/HtmlSVG.jsx';
-import { CssSVG } from '../assets/CssSVG.jsx';
-import { SassSVG } from '../assets/SassSVG.jsx';
-import { JavascriptSVG } from '../assets/JavascriptSVG.jsx';
-import { ReactSVG } from '../assets/ReactSVG.jsx';
-import { PythonSVG } from '../assets/PythonSVG.jsx';
-import { PhpSVG } from '../assets/PhpSVG.jsx';
-import { TailwindcssSVG } from '../assets/TailwindcssSVG.jsx';
 import { SuitcaseSVG } from '../assets/SuitcaseSVG.jsx';
 import { ClientsSVG } from '../assets/ClientsSVG.jsx';
 import { StarSVG } from '../assets/StarSVG.jsx';
@@ -29,6 +20,7 @@ import { CoffeeBeanSVG } from '../assets/CoffeeBeanSVG.jsx';
 import EmailAccordion from '../components/EmailAccordion.jsx';
 
 import BoxB4 from '../components/BoxB4';
+import BoxB1 from './BoxB1.jsx';
 
 const Portfolio = () => {
   return (
@@ -96,6 +88,9 @@ const Portfolio = () => {
               </a>
             </div>
           </div>
+          <div className="show-only-mobile">
+            <BoxB1 />
+          </div>
           {/* Services Section */}
           <div className="box A2">
             <div className="content-A2">
@@ -143,47 +138,8 @@ const Portfolio = () => {
         </div>
         <div className="column column-2">
           {/* Knowledge Section */}
-          <div className="box B1">
-            <div className="content-B1">
-              <div className="B1-title-wrapper">
-                <Brain />
-                <h1>Stash</h1>
-              </div>
-              <div className="B1-knowledge">
-                <a className='B1-1'> 
-                  <HtmlSVG />
-                  HTML
-                </a>
-                <a className='B1-2'> 
-                  <ReactSVG />
-                  React
-                </a>
-                <a className='B1-3'> 
-                <CssSVG />
-                  CSS
-                </a>
-                <a className='B1-4'> 
-                  <SassSVG />
-                  SASS
-                </a>
-                <a className='B1-5'> 
-                <TailwindcssSVG />
-                  Tailwind
-                </a>
-                <a className='B1-6'> 
-                  <JavascriptSVG />
-                  JavaScript
-                </a>
-                <a className='B1-8'> 
-                  <PythonSVG />
-                  Python
-                </a>
-                <a className='B1-9'> 
-                  <PhpSVG />
-                  PHP
-                </a>
-              </div>
-            </div>
+          <div className="hide-on-mobile">
+            <BoxB1 />
           </div>
           <div className="box-container B2">
             <div className="box sub-box">
