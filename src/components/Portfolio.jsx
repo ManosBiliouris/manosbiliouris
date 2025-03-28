@@ -28,6 +28,8 @@ import { CompassSVG } from '../assets/CompassSVG.jsx';
 import { CoffeeBeanSVG } from '../assets/CoffeeBeanSVG.jsx';
 import EmailAccordion from '../components/EmailAccordion.jsx';
 
+import BoxB4 from '../components/BoxB4';
+
 const Portfolio = () => {
   return (
     <div className="main">
@@ -235,15 +237,8 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="box B4 box-B4">
-            <span className='italic-text'>
-              P.S. || This was written at 3:00 a.m. under the influence of several cups of coffee, 
-              so if nothing else, you know I’m caffeinated and committed.
-            </span>
-            <h1>
-              Made with 💜 by me <br />
-              © 2025 All rights reserved
-            </h1>
+          <div className="hide-on-mobile">
+            <BoxB4 />
           </div>
         </div>
         <div className="column column-3">
@@ -360,6 +355,9 @@ const Portfolio = () => {
                 </div> */}
               </div>
             </div>
+          </div>
+          <div className="show-only-mobile">
+            <BoxB4 />
           </div>
         </div>
       </div>

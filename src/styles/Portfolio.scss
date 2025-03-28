@@ -650,3 +650,19 @@ html, body {
     font-size: 0.8rem;
   }
 }
+
+.hide-on-mobile {
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.show-only-mobile {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
