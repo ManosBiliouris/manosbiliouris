@@ -21,11 +21,11 @@ const BoxB1 = () => (
             </div>
             <div className="B1-knowledge">
             <a className='B1-1'> 
-                <HtmlSVG />
+                <HtmlSVG className='svg-icon' />
                 HTML
             </a>
             <a className='B1-2'> 
-                <ReactSVG />
+                <ReactSVG className='svg-icon' />
                 React
             </a>
             <a className='B1-3'> 
@@ -33,23 +33,23 @@ const BoxB1 = () => (
                 CSS
             </a>
             <a className='B1-4'> 
-                <SassSVG />
+                <SassSVG className='svg-icon' />
                 SASS
             </a>
             <a className='B1-5'> 
-            <TailwindcssSVG />
+            <TailwindcssSVG className='svg-icon' />
                 Tailwind
             </a>
             <a className='B1-6'> 
-                <JavascriptSVG />
+                <JavascriptSVG className='svg-icon' />
                 JavaScript
             </a>
             <a className='B1-8'> 
-                <PythonSVG />
+                <PythonSVG className='svg-icon' />
                 Python
             </a>
             <a className='B1-9'> 
-                <PhpSVG />
+                <PhpSVG className='svg-icon' />
                 PHP
             </a>
             </div>
