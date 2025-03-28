@@ -10,6 +10,7 @@ import { PythonSVG } from '../assets/PythonSVG';
 import { ReactSVG } from '../assets/ReactSVG';
 import { SassSVG } from '../assets/SassSVG';
 import { TailwindcssSVG } from '../assets/TailwindcssSVG';
+import '../styles/Portfolio.scss';
 
 const BoxB1 = () => (
     <div className="box B1">
@@ -28,7 +29,7 @@ const BoxB1 = () => (
                 React
             </a>
             <a className='B1-3'> 
-            <CssSVG />
+            <CssSVG className='svg-icon' />
                 CSS
             </a>
             <a className='B1-4'> 

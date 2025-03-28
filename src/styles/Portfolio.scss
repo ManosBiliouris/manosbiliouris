@@ -666,3 +666,13 @@ html, body {
     display: block;
   }
 }
+
+.svg-icon {
+  width: 1.5em;
+  height: 1.5em;
+
+  @media (max-width: 768px) {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
