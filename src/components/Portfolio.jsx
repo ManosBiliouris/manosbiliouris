@@ -31,7 +31,7 @@ const Portfolio = () => {
           {/* Me Section  */}
           <div className="box A1"> 
             <div className="content-A1">
-              <img src="./src/assets/manos.jpg" alt="avatar" />
+              <img src="/manosbiliouris/manos.jpg" alt="avatar" />
               <div className="content-A1-1">
                 <div className="blinker-wrapper">
                   <span className='blink'></span>
