@@ -65,6 +65,14 @@ html, body {
     p {
       font-size: 0.9rem;
     }
+    .content-B2-1, .content-B2-2, .content-B2-3{
+      flex-direction: row;
+      gap: 1rem;
+
+      .sub-content-B2-1, .sub-content-B2-2, .sub-content-B2-3 {
+        margin: 0;
+      }
+    }
   }
 
   // Mobile L (425px)

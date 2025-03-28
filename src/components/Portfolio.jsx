@@ -141,6 +141,7 @@ const Portfolio = () => {
           <div className="hide-on-mobile">
             <BoxB1 />
           </div>
+          {/* Work Section */}
           <div className="box-container B2">
             <div className="box sub-box">
               <div className="content-B2-1">
