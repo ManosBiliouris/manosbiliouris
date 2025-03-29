@@ -240,9 +240,49 @@ html, body {
     font-size: 1rem;
   }
 
-  .highlighted-text {
-    color: $purple-color;
+  $purple-color: #b2a7fb;
+
+.highlighted-text {
+  font-weight: bold;
+  color: $purple-color;
+  animation: neon-flicker 1.6s infinite alternate;
+  text-shadow:
+    0 0 5px $purple-color,
+    0 0 10px $purple-color,
+    0 0 20px $purple-color;
+  display: inline-block;
+}
+
+@keyframes neon-flicker {
+  0% {
+    opacity: 0.9;
+    text-shadow:
+      0 0 3px $purple-color,
+      0 0 6px $purple-color,
   }
+
+  8% {
+    opacity: 0.75;
+    text-shadow:
+      0 0 1px $purple-color,
+      0 0 2px $purple-color,
+  }
+
+  20% {
+    opacity: 0.95;
+    text-shadow:
+      0 0 4px $purple-color,
+      0 0 8px $purple-color,
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px $purple-color,
+      0 0 10px $purple-color,
+  }
+}
+
 }
 
 .blinker-wrapper {

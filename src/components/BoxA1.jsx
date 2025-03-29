@@ -21,8 +21,7 @@ const BoxA1 = () => (
         </h1>
         <p>
             <span className='highlighted-text'>Front-End Developer </span>
-            & <br />
-            <span className='highlighted-text'>UI/UX Designer</span>.
+            <span className='highlighted-text'>UI/UX Designer</span>
         </p>
         </div>
     </div>
