@@ -2,7 +2,8 @@
 import { WhatElse } from '../assets/WhatElse.jsx';
 
 const BoxA3 = () => (
-<div className="box A3">
+<div className="box A3 animated-glass-boxA3">
+    <div className="floating-squaresA3"></div>
     <div className="content-A3">
         <div className="A3-title-wrapper">
             <WhatElse />

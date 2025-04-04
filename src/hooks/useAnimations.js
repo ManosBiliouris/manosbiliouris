@@ -94,7 +94,8 @@ const useAnimations = () => {
         opacity: 0,
         stagger: 0.2,
         duration: 0.8,
-        ease: "back.out(1.7)"
+        ease: "back.out(1.7)",
+        immediateRender: false
       });
 
       // BoxB3: Contact section

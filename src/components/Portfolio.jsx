@@ -43,10 +43,6 @@ const Portfolio = () => {
           <div className="show-only-mobile">
             <BoxC1 />
           </div>
-          {/* What Else Section for BOTH*/}
-          <div>
-            <BoxA3 />
-          </div>
         </div>
         <div className="column column-2">
           {/* Knowledge Section for desktop*/}
@@ -56,6 +52,10 @@ const Portfolio = () => {
           {/* Counters for desktop*/}
           <div className="hide-on-mobile">
             <BoxB2 />
+          </div>
+          {/* What Else Section for BOTH*/}
+          <div>
+            <BoxA3 />
           </div>
           {/* Contact form for BOTH */}
           <div>

@@ -9,12 +9,10 @@ import { LinkedIn } from '../assets/LinkedIn';
 
 const BoxA1 = () => (
   <div className="box A1 animated-glass-box">
-    {/* Floating Glow Squares */}
     <span className="floating-squares"></span>
 
     {/* Glass Background Content */}
     <div className="content">
-      {/* Top Layer: Actual UI */}
       <div className="content-inner">
         <div className="content-A1">
           <img src="/manosbiliouris/manos.jpg" alt="avatar" />

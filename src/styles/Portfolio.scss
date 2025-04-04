@@ -23,146 +23,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  // Laptop L (1440px)
-  @media (max-width: 1439px) {
-    .column {
-      flex: 1 1 45%;
-    }
-  }
-
-  // Laptop (1024px)
-  @media (max-width: 1023px) {
-    flex-direction: column; // Stack columns vertically
-    .column-1 {
-      flex-basis: 100%; // full width
-    }
-    .column.column-2, .column.column-3{
-      flex-basis: 100%; //full width
-    }
-  }
-
-  // Tablet (768px)
-  @media (max-width: 767px) {
-    flex-direction: column; // Ensure vertical stacking
-    .column {
-      flex-basis: 100%; // Full width for all columns
-      padding: 0;
-    }
-
-    .box {
-      padding: 1rem;
-      font-size: 0.95rem;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    h1 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-    }
-    .content-B2-1, .content-B2-2, .content-B2-3{
-      flex-direction: row;
-      gap: 1rem;
-
-      .sub-content-B2-1, .sub-content-B2-2, .sub-content-B2-3 {
-        margin: 0;
-      }
-    }
-    .content-A1 .blinker-wrapper p{
-      font-size: 0.8rem;
-    }
-  }
-
-  // Mobile L (425px)
-  @media (max-width: 424px) {
-    .box {
-      padding: 0.75rem;
-      
-    }
-
-    h1 {
-      font-size: 1.3rem;
-    }
-
-    p {
-      font-size: 0.85rem;
-    }
-    .content-A1-buttons{
-      flex-wrap: wrap;
-    }
-    .content-A1-buttons {
-      
-      a{
-      flex-basis: calc(50% - 0.5rem);
-      padding: 0.5rem;
-      font-size: 0.8rem;
-      }
-      a.A1-3 {
-        flex-basis: 100%;
-      }
-    }
-    .content-B3-buttons a {
-      padding: 0.5rem;
-      font-size: 0.8rem;
-    }
-    .B1-knowledge{
-      min-width: 100%;
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .box-container{
-      min-width: 100%;
-      width: 100%;
-    }
-    .box-container.B2{
-      display: grid;
-      grid-template-columns: 1fr;
-      
-    }
-  }
-
-  // Mobile M (375px)
-  @media (max-width: 374px) {
-    h1 {
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.8rem;
-    }
-
-    .box {
-      padding: 0.65rem;
-    }
-  }
-
-  // Mobile S (320px)
-  @media (max-width: 319px) {
-    h1 {
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.75rem;
-    }
-
-    .box {
-      padding: 0.5rem;
-    }
-
-    .content-A1-buttons a,
-    .content-B3-buttons a {
-      font-size: 0.75rem;
-      padding: 0.4rem 0.6rem;
-    }
-  }
 }
 
  // Columns 
@@ -197,7 +57,7 @@ html, body {
   padding: 1.5rem;
   font-size: 1.2rem;
 
-  &.animated-glass-box {
+  &.animated-glass-box, &.animated-glass-boxB1, &.animated-glass-boxC1 {
     border: none;
     background-color: transparent;
   }
@@ -207,6 +67,7 @@ html, body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  margin-left: 3.2rem;
 }
 
 .sub-box {
@@ -224,7 +85,6 @@ html, body {
     width: 7rem;
     height: 7rem;
     border-radius: 1rem;
-
 }
 
 .content-A1-1 {
@@ -431,6 +291,12 @@ html, body {
     color: #fff;
     font-size: 1.5rem;
     gap: 1rem;
+  }
+}
+
+.project {
+  h1{
+    color: $text-color;
   }
 }
 
@@ -715,7 +581,7 @@ html, body {
 .hide-on-mobile {
   display: block;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     display: none;
   }
 }
@@ -723,7 +589,7 @@ html, body {
 .show-only-mobile {
   display: none;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     display: block;
   }
 }
@@ -742,7 +608,7 @@ html, body {
 .animated-glass-box {
   position: relative;
   width: 320px;
-  margin: 2rem 1.5rem;
+  margin: 2rem 1.5rem 2rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -756,20 +622,20 @@ html, body {
     width: 50%;
     height: 100%;
     border-radius: 8px;
-    transform: skewX(15deg);
+    transform: skewX(-15deg);
     transition: 0.5s;
-    z-index: 0; // ✅ gradient bottom
+    z-index: 0;
   }
 
   &::before {
     left: 50px;
-    background: linear-gradient(315deg, #9a73f8, #00b7ff);
+    background: linear-gradient(315deg, $primary-purple, $primary-blue);
     opacity: 0.8;
   }
 
   &::after {
     left: 50px;
-    background: linear-gradient(315deg, #9a73f8, #00b7ff);
+    background: linear-gradient(315deg, $primary-purple, $primary-blue);
     filter: blur(30px);
     opacity: 0.8;
   }
@@ -777,7 +643,7 @@ html, body {
   .floating-squares {
     position: absolute;
     inset: 0;
-    z-index: 2; // ✅ above glassbox background
+    z-index: 2; 
     pointer-events: none;
 
     &::before,
@@ -825,13 +691,10 @@ html, body {
   }
 }
 
-
-/* Only apply hover effects on devices that support hover */
 @media (hover: hover) and (pointer: fine) {
   .animated-glass-box:hover::before,
   .animated-glass-box:hover::after {
     transform: skewX(0deg);
-    width: calc(100% - 90px);
   }
 
   .animated-glass-box:hover .floating-squares::before {
@@ -856,28 +719,1183 @@ html, body {
   }
 }
 
-@media (max-width: 767px) {
-  .animated-glass-box {
-    margin: 0;
-    width: 100%;
 
-    .floating-squares::before {
+// BoxB1
+.animated-glass-boxB1 {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  &::before {
+    left: 230px;
+    background: linear-gradient(0deg, $primary-blue, $primary-purple);
+    opacity: 0.8;
+  }
+
+  &::after {
+    left: 230px;
+    background: linear-gradient(0deg, $primary-blue, $primary-purple);
+    filter: blur(30px);
+    opacity: 0.8;
+  }
+
+  .floating-shapesB1 {
+    position: absolute;
+    inset: 0;
+    z-index: 2; 
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      transition: 0.5s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      animation: floatDiagonal 4s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      animation-delay: -1s;
+    }
+  }
+
+  .contentB1 {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+
+    .content-innerB1 {
+      position: relative;
+      z-index: 3;
+      color: #fff;
+    }
+  }
+}
+
+// Hover only on non-touch screens
+@media (hover: hover) and (pointer: fine) {
+  .animated-glass-boxB1:hover::before,
+  .animated-glass-boxB1:hover::after {
+    transform: skewX(0deg);
+    width: calc(100%);
+    height: calc(30%);
+    top: 120px;
+    left: 0;
+  }
+
+  .animated-glass-boxB1:hover .floating-shapesB1::before {
+    top: -50px;
+    left: -50px;
+    opacity: 1;
+  }
+
+  .animated-glass-boxB1:hover .floating-shapesB1::after {
+    bottom: -50px;
+    right: -50px;
+    opacity: 1;
+  }
+}
+
+.animated-glass-boxC1 {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  &::before {
+    left: 110px;
+    background: linear-gradient(315deg, $primary-purple, $primary-blue);
+    opacity: 0.8;
+  }
+
+  &::after {
+    left: 110px;
+    background: linear-gradient(315deg, $primary-purple, $primary-blue);
+    filter: blur(30px);
+    opacity: 0.8;
+  }
+
+  .floating-squaresC1 {
+    position: absolute;
+    inset: 0;
+    z-index: 2; 
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      transition: 0.5s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      animation: floatDiagonal 4s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      animation-delay: -1s;
+    }
+  }
+
+  .contentC1 {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+
+    .content-innerC1 {
+      position: relative;
+      z-index: 3;
+      color: #fff;
+    }
+  }
+
+  // Hover effects on desktop
+  @media (hover: hover) and (pointer: fine) {
+    &:hover::before,
+    &:hover::after {
+      transform: skewX(0deg);
+      width: calc(80% - 120px);
+    }
+
+    &:hover .floating-squaresC1::before {
       top: -50px;
-      left: 20px;
+      left: -50px;
       opacity: 1;
+    }
+
+    &:hover .floating-squaresC1::after {
+      bottom: -50px;
+      right: -50px;
+      opacity: 1;
+    }
+  }
+}
+
+.animated-glass-boxB2 {
+  position: relative;
+  transition: 0.5s;
+  background: transparent;
+  border: none;
+  width: 100%;
+
+  &.center::before,
+  &.center::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.5s;
+    background: linear-gradient(0deg, $primary-purple, $primary-blue);
+    opacity: 0.8;
+    z-index: 0;
+  }
+
+  &.center::after {
+    filter: blur(30px);
+  }
+
+  .floating-squaresB2 {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      transition: 0.5s;
+      animation: floatB2 4s ease-in-out infinite;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      animation-delay: -1s;
+    }
+  }
+
+  .contentB2 {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1rem;
+
+    .content-innerB2 {
+      position: relative;
+      z-index: 3;
+      color: #fff;
+    }
+  }
+  
+
+  // Hover interactions
+  @media (hover: hover) and (pointer: fine) {
+    &.center:hover::before,
+    &.center:hover::after {
+      transform: skewX(0deg);
+      width: calc(100%);
+      height: calc(30%);
+      top: 60px;
+      left: 0;
+    }
+
+    &:hover .floating-squaresB2::before {
+      top: -30px;
+      left: -30px;
+      opacity: 1;
+    }
+
+    &:hover .floating-squaresB2::after {
+      bottom: -30px;
+      right: -30px;
+      opacity: 1;
+    }
+  }
+}
+
+// Floating glow animation
+@keyframes floatB2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(8px, -8px);
+  }
+}
+
+.animated-glass-boxC2 {
+  position: relative;
+  width: 100%;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+  background: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: skewX(-10deg);
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.4s ease;
+    z-index: 0;
+  }
+
+  &::before {
+    background: linear-gradient(135deg, $primary-purple, $primary-blue);
+    opacity: 0.8;
+  }
+
+  &::after {
+    background: linear-gradient(135deg, $primary-purple, $primary-blue);
+    filter: blur(30px);
+    opacity: 0.8;
+  }
+
+  .floating-squaresC2 {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      transition: 0.5s;
+      animation: floatC2 4s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      animation-delay: -1s;
+    }
+  }
+
+  .content-C2 {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1.8rem;
+
+    .content-innerC2 {
+      position: relative;
+      z-index: 3;
+      color: #fff;
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover::before,
+    &:hover::after {
+      transform: skewX(0deg);
+      left: 35%;
+    }
+
+    &:hover .floating-squaresC2::before {
+      top: -50px;
+      left: -50px;
+      opacity: 1;
+    }
+
+    &:hover .floating-squaresC2::after {
+      bottom: -50px;
+      right: -50px;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes floatC2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+}
+
+.animated-glass-boxA2 {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transform: skewX(15deg);
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.4s ease;
+    z-index: 0;
+  }
+
+  &::before {
+    background: linear-gradient(135deg, $primary-purple, $primary-blue);
+    opacity: 0.8;
+  }
+
+  &::after {
+    background: linear-gradient(135deg, $primary-purple, $primary-blue);
+    filter: blur(30px);
+    opacity: 0.8;
+  }
+
+  .floating-squaresA2 {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      transition: 0.5s;
+      animation: floatA2 4s ease-in-out infinite;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      animation-delay: -1s;
+    }
+  }
+
+  .content-A2 {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover::before,
+    &:hover::after {
+      transform: skewX(0deg);
+    }
+
+    &:hover .floating-squaresA2::before {
+      top: -40px;
+      left: -40px;
+      opacity: 1;
+    }
+
+    &:hover .floating-squaresA2::after {
+      bottom: -40px;
+      right: -40px;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes floatA2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+}
+
+.animated-glass-boxA3 {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.5s ease;
+    z-index: 0;
+  }
+
+  &::before {
+    background: linear-gradient(0deg, $primary-blue,$primary-purple);
+    opacity: 0.8;
+  }
+
+  &::after {
+    background: linear-gradient(0deg, $primary-blue, $primary-purple);
+    filter: blur(30px);
+    opacity: 0.8;
+  }
+
+  .floating-squaresA3 {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      transition: 0.5s;
+      animation: floatA3 4s ease-in-out infinite;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      animation-delay: -1s;
+    }
+  }
+
+  .content-A3 {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover::before,
+    &:hover::after {
+      transform: skewX(0deg);
+      width: calc(100%);
+      height: calc(30%);
+      top: 150px;
+      left: 0;
+    }
+
+    &:hover .floating-squaresA3::before {
+      top: -40px;
+      left: -40px;
+      opacity: 1;
+    }
+
+    &:hover .floating-squaresA3::after {
+      bottom: -40px;
+      right: -40px;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes floatA3 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+}
+
+.animated-glass-boxC3 {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+
+  .content-C3 {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+    width: 100%;
+  }
+}
+
+.neon-border-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #9a73f8, #121212 , #00b7ff);
+    background-size: 300% 300%;
+    z-index: 2;
+    mask: 
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    padding: 2px;
+    animation: borderTrail 5s linear infinite;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+  }
+
+  .content-B3 {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+@keyframes borderTrail {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+
+
+
+
+
+// Laptop L (1440px)
+@media (max-width: 1439px) {
+  .column {
+    flex: 1 1 45%;
+  }
+}
+
+// Laptop (1024px)
+@media (max-width: 1025px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .animated-glass-box,
+  .animated-glass-boxA2,
+  .animated-glass-boxA3,
+  .animated-glass-boxB1,
+  .animated-glass-boxB2,
+  .animated-glass-boxB3,
+  .animated-glass-boxB4,
+  .animated-glass-boxC1,
+  .animated-glass-boxC2,
+  .animated-glass-boxC3 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .animated-glass-box::before,
+  .animated-glass-box::after {
+    left: 60%;
+    width: 20%;
+    transform: skewX(-36deg);
+  }
+
+  .animated-glass-boxB1::before,
+  .animated-glass-boxB1::after {
+    left: 40%;
+    width: 20%;
+    transform: skewX(0deg);
+  }
+
+  .animated-glass-boxC2::before,
+  .animated-glass-boxC2::after {
+    background: linear-gradient(0deg, $primary-purple, $primary-blue);
+    left: 25%;
+    width: 20%;
+    transform: skewX(-40deg);
+  }
+
+  .animated-glass-boxA2::before,
+  .animated-glass-boxA2::after {
+    left: 26%;
+    width: 20%;
+    transform: skewX(40deg);
+  }
+
+  .animated-glass-boxB2.center::before,
+  .animated-glass-boxB2.center::after {
+    left: 35%;
+    width: 30%;
+    height: 100%;
+  }
+
+  .animated-glass-boxC1::before,
+  .animated-glass-boxC1::after {
+    left: 42%;
+    width: 20%;
+    transform: skewX(0deg);
+    background: linear-gradient(0deg, $primary-purple, $primary-blue);
+  }
+
+  .animated-glass-boxA3::before,
+  .animated-glass-boxA3::after {
+    left: 42%;
+    width: 20%;
+    transform: skewX(0deg);
+  }
+
+  .column-1 {
+    flex-basis: 100%;
+  }
+
+  .column.column-2,
+  .column.column-3 {
+    flex-basis: 100;
+  }
+
+  .column {
+    align-self: center;
+  }
+}
+
+// Tablet (768px)
+@media (max-width: 769px) {
+  .animated-glass-box,
+  .animated-glass-boxA2,
+  .animated-glass-boxA3,
+  .animated-glass-boxB1,
+  .animated-glass-boxB2,
+  .animated-glass-boxB3,
+  .animated-glass-boxB4,
+  .animated-glass-boxC1,
+  .animated-glass-boxC2,
+  .animated-glass-boxC3 {
+    min-width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .column {
+    flex-basis: 100%;
+  }
+
+  .box {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .content-B2-1,
+  .content-B2-2,
+  .content-B2-3 {
+    flex-direction: row;
+    gap: 1rem;
+
+    .sub-content-B2-1,
+    .sub-content-B2-2,
+    .sub-content-B2-3 {
+      margin: 0;
+    }
+  }
+
+  .content-A1 .blinker-wrapper p {
+    font-size: 0.8rem;
+  }
+
+  .box-container.B2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .animated-glass-box {
+    &::before,
+    &::after {
+      left: 60%;
+      width: 20%;
+      transform: skewX(-28deg);
+    }
+  }
+  
+  .animated-glass-boxC2 {
+    &::before,
+    &::after {
+      left: 22%;
+      width: 20%;
+      transform: skewX(-33deg);
+    }
+  }
+
+  .animated-glass-boxA2 {
+    &::before,
+    &::after {
+      left: 22%;
+      width: 20%;
+      transform: skewX(35deg);
+    }
+  }
+
+  .animated-glass-boxB2.center {
+    &::before,
+    &::after {
+      left: 43%;
+      width: 15%;
+      transform: skewX(0deg);
+    }
+  }
+  .animated-glass-boxB2.center.center1 {
+    &::before,
+    &::after {
+      background: linear-gradient(0deg, $primary-blue, $primary-purple);
+    }
+  }
+
+  .animated-glass-boxC1 {
+    &::before,
+    &::after {
+      left: 54%;
+      width: 18%;
+      transform: skewX(30deg);
+      background: linear-gradient(180deg, $primary-purple, $primary-blue);
+    }
+  }
+
+  .animated-glass-boxA3 {
+    &::before,
+    &::after {
+      left: 53%;
+      width: 20%;
+      transform: skewX(-23deg);
+      background: linear-gradient(0deg, $primary-purple, $primary-blue);
+    }
+  }
+}
+
+// Mobile L (425px)
+@media (max-width: 426px) {
+  .box {
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .content-A1-buttons {
+    flex-wrap: wrap;
+
+    a {
+      flex-basis: calc(50% - 0.5rem);
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    a.A1-3 {
+      flex-basis: 100%;
+    }
+  }
+
+  .content-B3-buttons a {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .B1-knowledge {
+    min-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .box-container {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .animated-glass-box {
+    &::before,
+    &::after {
+      left: 40%;
+      width: 25%;
+      transform: skewX(-22deg);
+    }
+    
+    .floating-squares::before {
+      top: -20px;
+      left: -10px;
+      opacity: 1;
+      width: 80px;
+      height: 80px;
     }
 
     .floating-squares::after {
       bottom: -50px;
       right: 20px;
       opacity: 1;
+      width: 80px;
+      height: 80px;
     }
 
     .content {
       padding: 1rem 1rem;
     }
+  }
 
+  .animated-glass-boxB1 {
+    &::before,
+    &::after {
+      left: 5%;
+      width: 25%;
+    }
+    
+    .floating-shapesB1::before {
+      top: -50px;
+      left: 20px;
+      opacity: 0;
+    }
+
+    .floating-shapesB1::after {
+      opacity: 0;
+    }
+
+    .contentB1 {
+      padding: 1rem 1rem;
+    }
+  }
+  
+  .animated-glass-boxC1 {
+    &::before,
+    &::after {
+      left: 49%;
+      width: 25%;
+      height: 100%;
+      transform: skewX(14deg);
+      background: linear-gradient(315deg, $primary-blue, $primary-purple);
+    }
+  }
+
+  .floating-shapesC1::before {
+    top: -50px;
+    left: 20px;
+    opacity: 1;
+  }
+
+  .floating-shapesC1::after {
+    bottom: -50px;
+    right: 20px;
+    opacity: 1;
+  }
+
+  .contentC1 {
+    padding: 1rem;
+  }
+
+  .animated-glass-boxB2.center::before,
+  .animated-glass-boxB2.center::after {
+    left: 38%;
+    width: 25%;
+    height: 100%;
+  }
+
+  .animated-glass-boxB2.center::after {
+    filter: blur(20px);
+  }
+
+  .animated-glass-boxC2 {
+    &::before,
+    &::after {
+      left: 34%;
+      width: 25%;
+      transform: skewX(20deg);
+      background: linear-gradient(135deg, $primary-blue, $primary-purple);
+    }
+  }
+  
+  .floating-squaresC2::before {
+    top: -50px;
+    left: 20px;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+  }
+
+  .floating-squaresC2::after {
+    bottom: -50px;
+    right: 20px;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+  }
+
+  .content-C2 {
+    padding: 1rem;
+  }
+  
+  .animated-glass-boxA2 {
+    &::before,
+    &::after {
+      left: 50%;
+      width: 25%;
+      transform: skewX(-10deg);
+    }
+  }
+
+  .floating-squaresA2::before {
+    top: -40px;
+    left: 20px;
+    opacity: 1;
+  }
+
+  .floating-squaresA2::after {
+    bottom: -40px;
+    right: 20px;
+    opacity: 1;
+  }
+
+  .content-A2 {
+    padding: 1rem;
+  }
+  
+  .animated-glass-boxC3{
+    margin: 0;
+    width: 100%;
+  }
+
+  .animated-glass-boxA3 {
+    &::before,
+    &::after {
+      left: 49%;
+      width: 25%;
+      transform: skewX(-7deg);
+      background: linear-gradient(0deg, $primary-purple, $primary-blue);
+    }
+  }
+
+  .floating-squaresA3::before {
+    top: -40px;
+    left: 20px;
+    opacity: 1;
+  }
+
+  .floating-squaresA3::after {
+    bottom: -40px;
+    right: 20px;
+    opacity: 1;
+  }
+
+  .content-A3 {
+    padding: 1rem;
   }
 }
 
-// BoxB1
+// Mobile S (320px)
+@media (max-width: 321px) {
+  .content {
+    margin: 0rem 2rem;
+  }
+}

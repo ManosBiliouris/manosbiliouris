@@ -1,0 +1,82 @@
+Date : 2025-03-31 11:50:29
+Directory : c:\Users\Manwlakis\Desktop\portofolio-test\src\components
+Total : 46 files,  -7285 codes, -41 comments, -307 blanks, all -7633 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| Markdown       |          1 |         -5 |          0 |         -4 |         -9 |
+| XML            |          1 |         -6 |         -1 |         -5 |        -12 |
+| HTML           |          1 |        -13 |          0 |         -2 |        -15 |
+| JavaScript     |          3 |       -201 |        -18 |        -29 |       -248 |
+| JavaScript JSX |         34 |       -464 |          0 |        -37 |       -501 |
+| SCSS           |          4 |     -1,404 |        -22 |       -228 |     -1,654 |
+| JSON           |          2 |     -5,192 |          0 |         -2 |     -5,194 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                       | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                          |         46 |     -7,285 |        -41 |       -307 |     -7,633 |
+| ..                                                                         |         46 |     -7,285 |        -41 |       -307 |     -7,633 |
+| .. (Files)                                                                 |          2 |        -18 |          0 |         -4 |        -22 |
+| ..\..                                                                      |          6 |     -5,253 |         -1 |        -12 |     -5,266 |
+| ..\assets                                                                  |         33 |       -452 |         -1 |        -38 |       -491 |
+| ..\hooks                                                                   |          1 |       -158 |        -17 |        -25 |       -200 |
+| ..\styles                                                                  |          4 |     -1,404 |        -22 |       -228 |     -1,654 |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                   | language       | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\Manwlakis\Desktop\portofolio-test\README.md                       | Markdown       |         -5 |          0 |         -4 |         -9 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\eslint.config.js                | JavaScript     |        -37 |          0 |         -2 |        -39 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\index.html                      | HTML           |        -13 |          0 |         -2 |        -15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\package-lock.json               | JSON           |     -5,158 |          0 |         -1 |     -5,159 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\package.json                    | JSON           |        -34 |          0 |         -1 |        -35 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\App.jsx                     | JavaScript JSX |        -10 |          0 |         -2 |        -12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\AceSVG.jsx           | JavaScript JSX |        -15 |          0 |          0 |        -15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\AgeSVG.jsx           | JavaScript JSX |        -17 |          0 |          0 |        -17 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\Brain.jsx            | JavaScript JSX |        -60 |          0 |          0 |        -60 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ClientsSVG.jsx       | JavaScript JSX |        -15 |          0 |         -2 |        -17 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\CoffeeBeanSVG.jsx    | JavaScript JSX |         -9 |          0 |         -4 |        -13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\CompassSVG.jsx       | JavaScript JSX |        -15 |          0 |          0 |        -15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\CopySVG.jsx          | JavaScript JSX |        -15 |          0 |          0 |        -15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\CssSVG.jsx           | JavaScript JSX |        -16 |          0 |         -1 |        -17 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\EmailSVG.jsx         | JavaScript JSX |        -12 |          0 |         -1 |        -13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\GitHub.jsx           | JavaScript JSX |        -15 |          0 |          0 |        -15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\HandshakeSVG.jsx     | JavaScript JSX |        -12 |          0 |          0 |        -12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\HospitalSVG.jsx      | JavaScript JSX |         -7 |          0 |          0 |         -7 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\HtmlSVG.jsx          | JavaScript JSX |        -11 |          0 |          0 |        -11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\Instagram.jsx        | JavaScript JSX |        -12 |          0 |          0 |        -12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\JavascriptSVG.jsx    | JavaScript JSX |        -11 |          0 |         -2 |        -13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\KotlinSVG.jsx        | JavaScript JSX |         -9 |          0 |         -6 |        -15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\LinkedIn.jsx         | JavaScript JSX |        -11 |          0 |          0 |        -11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\PhpSVG.jsx           | JavaScript JSX |        -11 |          0 |          0 |        -11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\PlugSVG.jsx          | JavaScript JSX |        -16 |          0 |         -2 |        -18 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\PythonSVG.jsx        | JavaScript JSX |        -11 |          0 |          0 |        -11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ReactSVG.jsx         | JavaScript JSX |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\SassSVG.jsx          | JavaScript JSX |        -11 |          0 |         -1 |        -12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ServicesSVG.jsx      | JavaScript JSX |        -13 |          0 |          0 |        -13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ShrugSVG.jsx         | JavaScript JSX |        -12 |          0 |         -4 |        -16 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\StarSVG.jsx          | JavaScript JSX |        -13 |          0 |         -1 |        -14 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\SuitcaseSVG.jsx      | JavaScript JSX |        -12 |          0 |         -2 |        -14 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\TailwindcssSVG.jsx   | JavaScript JSX |        -11 |          0 |          0 |        -11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\TaxiSVG.jsx          | JavaScript JSX |        -14 |          0 |         -2 |        -16 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\TeaSVG.jsx           | JavaScript JSX |        -15 |          0 |         -2 |        -17 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\TelegramSVG.jsx      | JavaScript JSX |        -12 |          0 |         -2 |        -14 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ViteSVG.jsx          | JavaScript JSX |        -11 |          0 |          0 |        -11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\WhatElse.jsx         | JavaScript JSX |        -13 |          0 |          0 |        -13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\taxi-svgrepo-com.svg | XML            |         -6 |         -1 |         -5 |        -12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\hooks\useAnimations.js      | JavaScript     |       -158 |        -17 |        -25 |       -200 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\main.jsx                    | JavaScript JSX |         -8 |          0 |         -2 |        -10 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\styles\App.scss             | SCSS           |        -20 |         -1 |         -4 |        -25 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\styles\EmailAccordion.scss  | SCSS           |        -60 |          0 |         -8 |        -68 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\styles\Portfolio.scss       | SCSS           |     -1,316 |        -21 |       -215 |     -1,552 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\styles\variables.scss       | SCSS           |         -8 |          0 |         -1 |         -9 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\vite.config.js                  | JavaScript     |         -6 |         -1 |         -2 |         -9 |
+| Total                                                                      |                |     -7,285 |        -41 |       -307 |     -7,633 |
++----------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

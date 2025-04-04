@@ -1,0 +1,84 @@
+Date : 2025-03-31 11:51:18
+Directory : c:\Users\Manwlakis\Desktop\portofolio-test\src
+Total : 52 files,  2492 codes, 71 comments, 339 blanks, all 2902 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| SCSS           |          4 |      1,404 |         22 |        228 |      1,654 |
+| JavaScript JSX |         46 |        924 |         31 |         81 |      1,036 |
+| JavaScript     |          1 |        158 |         17 |         25 |        200 |
+| XML            |          1 |          6 |          1 |          5 |         12 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                            |         52 |      2,492 |         71 |        339 |      2,902 |
+| . (Files)                                                                    |          2 |         18 |          0 |          4 |         22 |
+| assets                                                                       |         33 |        452 |          1 |         38 |        491 |
+| components                                                                   |         12 |        460 |         31 |         44 |        535 |
+| hooks                                                                        |          1 |        158 |         17 |         25 |        200 |
+| styles                                                                       |          4 |      1,404 |         22 |        228 |      1,654 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                     | language       | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\App.jsx                       | JavaScript JSX |         10 |          0 |          2 |         12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\AceSVG.jsx             | JavaScript JSX |         15 |          0 |          0 |         15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\AgeSVG.jsx             | JavaScript JSX |         17 |          0 |          0 |         17 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\Brain.jsx              | JavaScript JSX |         60 |          0 |          0 |         60 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ClientsSVG.jsx         | JavaScript JSX |         15 |          0 |          2 |         17 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\CoffeeBeanSVG.jsx      | JavaScript JSX |          9 |          0 |          4 |         13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\CompassSVG.jsx         | JavaScript JSX |         15 |          0 |          0 |         15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\CopySVG.jsx            | JavaScript JSX |         15 |          0 |          0 |         15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\CssSVG.jsx             | JavaScript JSX |         16 |          0 |          1 |         17 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\EmailSVG.jsx           | JavaScript JSX |         12 |          0 |          1 |         13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\GitHub.jsx             | JavaScript JSX |         15 |          0 |          0 |         15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\HandshakeSVG.jsx       | JavaScript JSX |         12 |          0 |          0 |         12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\HospitalSVG.jsx        | JavaScript JSX |          7 |          0 |          0 |          7 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\HtmlSVG.jsx            | JavaScript JSX |         11 |          0 |          0 |         11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\Instagram.jsx          | JavaScript JSX |         12 |          0 |          0 |         12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\JavascriptSVG.jsx      | JavaScript JSX |         11 |          0 |          2 |         13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\KotlinSVG.jsx          | JavaScript JSX |          9 |          0 |          6 |         15 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\LinkedIn.jsx           | JavaScript JSX |         11 |          0 |          0 |         11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\PhpSVG.jsx             | JavaScript JSX |         11 |          0 |          0 |         11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\PlugSVG.jsx            | JavaScript JSX |         16 |          0 |          2 |         18 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\PythonSVG.jsx          | JavaScript JSX |         11 |          0 |          0 |         11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ReactSVG.jsx           | JavaScript JSX |          9 |          0 |          1 |         10 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\SassSVG.jsx            | JavaScript JSX |         11 |          0 |          1 |         12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ServicesSVG.jsx        | JavaScript JSX |         13 |          0 |          0 |         13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ShrugSVG.jsx           | JavaScript JSX |         12 |          0 |          4 |         16 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\StarSVG.jsx            | JavaScript JSX |         13 |          0 |          1 |         14 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\SuitcaseSVG.jsx        | JavaScript JSX |         12 |          0 |          2 |         14 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\TailwindcssSVG.jsx     | JavaScript JSX |         11 |          0 |          0 |         11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\TaxiSVG.jsx            | JavaScript JSX |         14 |          0 |          2 |         16 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\TeaSVG.jsx             | JavaScript JSX |         15 |          0 |          2 |         17 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\TelegramSVG.jsx        | JavaScript JSX |         12 |          0 |          2 |         14 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\ViteSVG.jsx            | JavaScript JSX |         11 |          0 |          0 |         11 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\WhatElse.jsx           | JavaScript JSX |         13 |          0 |          0 |         13 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\assets\taxi-svgrepo-com.svg   | XML            |          6 |          1 |          5 |         12 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxA1.jsx          | JavaScript JSX |         72 |          2 |          7 |         81 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxA2.jsx          | JavaScript JSX |         28 |          1 |          3 |         32 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxA3.jsx          | JavaScript JSX |         23 |          1 |          1 |         25 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxB1.jsx          | JavaScript JSX |         33 |          3 |          5 |         41 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxB2.jsx          | JavaScript JSX |         59 |          1 |          6 |         66 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxB3.jsx          | JavaScript JSX |         20 |          1 |          1 |         22 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxB4.jsx          | JavaScript JSX |         13 |          2 |          3 |         18 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxC1.jsx          | JavaScript JSX |         43 |          2 |          5 |         50 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxC2.jsx          | JavaScript JSX |         26 |          1 |          2 |         29 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\BoxC3.jsx          | JavaScript JSX |         25 |          1 |          1 |         27 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\EmailAccordion.jsx | JavaScript JSX |         45 |          0 |          7 |         52 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\components\Portfolio.jsx      | JavaScript JSX |         73 |         16 |          3 |         92 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\hooks\useAnimations.js        | JavaScript     |        158 |         17 |         25 |        200 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\main.jsx                      | JavaScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\styles\App.scss               | SCSS           |         20 |          1 |          4 |         25 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\styles\EmailAccordion.scss    | SCSS           |         60 |          0 |          8 |         68 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\styles\Portfolio.scss         | SCSS           |      1,316 |         21 |        215 |      1,552 |
+| c:\Users\Manwlakis\Desktop\portofolio-test\src\styles\variables.scss         | SCSS           |          8 |          0 |          1 |          9 |
+| Total                                                                        |                |      2,492 |         71 |        339 |      2,902 |
++------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
