@@ -334,7 +334,6 @@ html, body {
 .B1-knowledge {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(auto,1fr);
   grid-gap: 1rem;
 
   a {
@@ -1672,6 +1671,26 @@ html, body {
   }
 }
 
+@media (max-width: 600px) {
+  .content-A1-buttons {
+    flex-wrap: wrap;
+
+    a {
+      flex-basis: calc(50% - 0.5rem);
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    a.A1-3 {
+      flex-basis: 100%;
+    }
+  }
+  
+  .B1-knowledge {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 // Mobile L (425px)
 @media (max-width: 426px) {
   .box {
@@ -1686,20 +1705,6 @@ html, body {
     font-size: 0.85rem;
   }
 
-  .content-A1-buttons {
-    flex-wrap: wrap;
-
-    a {
-      flex-basis: calc(50% - 0.5rem);
-      padding: 0.5rem;
-      font-size: 0.8rem;
-    }
-
-    a.A1-3 {
-      flex-basis: 100%;
-    }
-  }
-
   .content-B3-buttons a {
     padding: 0.5rem;
     font-size: 0.8rem;
@@ -1710,11 +1715,6 @@ html, body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .box-container {
-    min-width: 100%;
-    width: 100%;
   }
 
   .animated-glass-box {
