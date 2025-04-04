@@ -1,5 +1,5 @@
 import '../styles/Portfolio.scss';
-import useAnimations from '../hooks/useAnimations';
+// import useAnimations from '../hooks/useAnimations';
 
 import BoxA1 from './BoxA1.jsx';
 import BoxA2 from './BoxA2.jsx';
@@ -13,7 +13,7 @@ import BoxC2 from './BoxC2.jsx';
 import BoxC3 from './BoxC3.jsx';
 
 const Portfolio = () => {
-  useAnimations();
+  // useAnimations();
   return (
     <div className="main">
       <div className="container">
